@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wifi Transfer</string>
+    <string name="ip_address">IP address:</string>
+    <string name="debug_info">Debug INFO</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="wifi_file_manager">Wi-Fi File Manager</string>
+</resources>

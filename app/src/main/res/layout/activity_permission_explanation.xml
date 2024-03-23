@@ -1,0 +1,137 @@
+<!-- res/layout/activity_permission_explanation.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="bottom">
+
+        <!-- Adjusted ImageView -->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+        android:src="@drawable/logo"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <!-- Location Permission -->
+        <LinearLayout
+            android:id="@+id/locationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Location"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/btnGrantLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grant"
+                style="@style/Widget.MaterialComponents.Button"/>
+        </LinearLayout>
+
+        <!-- Explanation for Location Permission -->
+        <TextView
+            android:id="@+id/explanationLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Location permission for older version of Android."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="25dp"/>
+
+        <!-- Storage Permission -->
+        <LinearLayout
+            android:id="@+id/storageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Storage"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/btnGrantStorage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grant"
+                style="@style/Widget.MaterialComponents.Button"/>
+        </LinearLayout>
+
+        <!-- Explanation for Storage Permission -->
+        <TextView
+            android:id="@+id/explanationStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Allow file permissions to enable your app to save and retrieve files seamlessly on your device during local file transfers."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Wifi Permission -->
+        <LinearLayout
+            android:id="@+id/wifiLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wifi"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/btnGrantWifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Grant"
+                style="@style/Widget.MaterialComponents.Button"/>
+        </LinearLayout>
+
+        <!-- Explanation for Wifi Permission -->
+        <TextView
+            android:id="@+id/explanationWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable WiFi for local file sharing. This allows your app to create a local network, enabling users on the same network to access, upload, and download files via a web browser."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="50dp"/>
+
+    </LinearLayout>
+
+    <!-- Done Button at the bottom -->
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        style="@style/Widget.MaterialComponents.Button"/>
+</LinearLayout>

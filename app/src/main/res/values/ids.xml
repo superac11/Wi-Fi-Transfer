@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="guideline" type="id" />
+    <item name="guideline3" type="id" />
+    <item name="txtdebug" type="id" />
+    <item name="scrollViewLog" type="id" />
+    <item name="qrimageview" type="id" />
+    <item name="guideline5" type="id" />
+    <item name="textViewLog" type="id" />
+    <item name="guideline6" type="id" />
+    <item name="guideline7" type="id" />
+</resources>

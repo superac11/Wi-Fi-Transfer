@@ -1,0 +1,27 @@
+<!-- res/drawable/animated_gradient_background.xml -->
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:constantSize="true">
+
+    <!-- Default state -->
+    <item android:id="@+id/default_state">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#40FFC3"
+                android:centerColor="#009EBA"
+                android:endColor="#3F51B5"
+                android:angle="45" />
+        </shape>
+    </item>
+
+    <!-- Pressed state -->
+    <item android:id="@+id/pressed_state">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#6B16A6"
+                android:centerColor="#409CFF"
+                android:endColor="#F9FF40"
+                android:angle="45" />
+        </shape>
+    </item>
+
+</animated-selector>
